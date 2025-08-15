@@ -27,4 +27,4 @@ app.post('/notes', (req, res) => {
   res.status(201).json(note);
 });
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Listening on 0.0.0.0:${PORT}`));
